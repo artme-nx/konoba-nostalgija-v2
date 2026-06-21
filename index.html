@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konoba Nostalgija — Šibenik · Priča duga od 1987.</title>
+<meta name="description" content="Konoba Nostalgija, Šibenik. Tradicionalna dalmatinska kuhinja i priča duga od 1987. Peka, brodet, pašticada — kuhano polako, s ljubavlju, kao nekad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F3EDE1;
+  --cream-2:#EAE1D0;
+  --sand:#DCCFB8;
+  --umber:#9C5B34;       /* single muted accent */
+  --ink:#33291F;
+  --ink-soft:#6E6353;
+  --line:rgba(51,41,31,.13);
+  --font-serif:'EB Garamond', serif;
+  --font-sans:'Jost', sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:var(--font-sans);font-weight:300;background:var(--cream);color:var(--ink);
+  line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.045;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:multiply}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--umber);font-weight:400}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:center;justify-content:space-between;padding:22px 36px;transition:.5s}
+header.scrolled{background:rgba(243,237,225,.94);backdrop-filter:blur(8px);padding:14px 36px;box-shadow:0 1px 0 var(--line)}
+.logo{font-family:var(--font-serif);font-size:27px;letter-spacing:.02em;font-weight:500}
+.logo em{font-style:italic;color:var(--umber)}
+nav.main{display:flex;gap:36px;align-items:center}
+nav.main a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.72;transition:.3s}
+nav.main a:hover{opacity:1;color:var(--umber)}
+.btn-res{font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--umber);color:var(--umber);padding:12px 24px;transition:.4s}
+.btn-res:hover{background:var(--umber);color:var(--cream)}
+header.scrolled .logo,header.scrolled nav.main a{color:var(--ink)}
+.hero-light .logo,.hero-light nav.main a{color:#F3EDE1}
+.hero-light .btn-res{border-color:#F3EDE1;color:#F3EDE1}
+.hero-light .btn-res:hover{background:#F3EDE1;color:var(--ink)}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:0}
+.burger span{width:24px;height:1.5px;background:currentColor;transition:.3s}
+.hero-light .burger{color:#F3EDE1}
+
+/* HERO fullbleed slow zoom */
+.hero{height:100vh;min-height:660px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero-bg{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=1900&q=80") center/cover;filter:sepia(.32) contrast(1.06) saturate(.82) brightness(.92);transform:scale(1.0);will-change:transform}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,18,10,.42),rgba(25,18,10,.28) 45%,rgba(25,18,10,.6))}
+.hero-inner{position:relative;z-index:3;color:#F5EFE3;padding:0 28px;max-width:900px}
+.hero-inner h1{font-family:var(--font-serif);font-weight:400;font-size:clamp(48px,8vw,108px);line-height:1.02;letter-spacing:.01em;margin:.2em 0}
+.hero-inner h1 em{font-style:italic;color:#E9C49B}
+.hero-inner p{font-family:var(--font-serif);font-style:italic;font-size:clamp(18px,2.4vw,27px);max-width:600px;margin:.4em auto 0;color:#EFE5D5;line-height:1.4}
+.scroll-ind{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;color:#E9C49B;font-size:10px;letter-spacing:.26em;text-transform:uppercase;display:flex;flex-direction:column;gap:9px;align-items:center}
+.scroll-ind::after{content:"";width:1px;height:42px;background:#E9C49B;opacity:.6;animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scaleY(.4);opacity:.3}50%{transform:scaleY(1);opacity:.8}}
+
+.pad{padding:clamp(80px,13vh,160px) 0}
+.reveal{opacity:0;transform:translateY(28px)}
+
+/* STATS count-up */
+.stats{background:var(--cream-2);text-align:center}
+.stats .grid{display:flex;justify-content:center;gap:clamp(40px,9vw,130px);flex-wrap:wrap}
+.stat .num{font-family:var(--font-serif);font-size:clamp(54px,8vw,92px);font-weight:500;color:var(--umber);line-height:1}
+.stat .lbl{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+
+/* MANIFEST */
+.manifest{text-align:center;max-width:780px;margin:0 auto;padding:0 32px}
+.manifest .eyebrow{display:block;margin-bottom:24px}
+.manifest p{font-family:var(--font-serif);font-size:clamp(25px,3.6vw,40px);line-height:1.4;font-weight:400}
+.manifest p em{font-style:italic;color:var(--umber)}
+
+/* TIMELINE — the spine */
+.story-sec{background:var(--cream)}
+.story-head{text-align:center;margin-bottom:clamp(50px,8vh,90px)}
+.story-head h2{font-family:var(--font-serif);font-weight:400;font-size:clamp(38px,5.5vw,68px);margin-top:.2em}
+.spine{max-width:1000px;margin:0 auto;position:relative}
+.spine::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--line);transform:translateX(-.5px)}
+.node{display:grid;grid-template-columns:1fr 60px 1fr;align-items:center;margin-bottom:clamp(48px,8vh,96px)}
+.node:last-child{margin-bottom:0}
+.node .dot{grid-column:2;justify-self:center;width:14px;height:14px;border-radius:50%;background:var(--umber);box-shadow:0 0 0 6px var(--cream);z-index:2}
+.node .year{font-family:var(--font-serif);font-style:italic;font-size:clamp(34px,5vw,58px);color:var(--umber);line-height:1}
+.node .txt h3{font-family:var(--font-serif);font-size:clamp(24px,3vw,32px);font-weight:500;margin-bottom:8px}
+.node .txt p{color:var(--ink-soft);font-size:16px}
+.node .media{overflow:hidden;border-radius:2px}
+.node .media img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;filter:sepia(.34) contrast(1.06) saturate(.8)}
+/* left/right placement */
+.node.left .yearcol{grid-column:1;text-align:right;padding-right:48px}
+.node.left .contentcol{grid-column:3;padding-left:48px}
+.node.right .contentcol{grid-column:1;padding-right:48px;text-align:right}
+.node.right .yearcol{grid-column:3;padding-left:48px}
+.clip{clip-path:inset(0 0 100% 0)}
+
+/* MENU */
+.menu-sec{background:var(--cream-2)}
+.menu-head{text-align:center;margin-bottom:clamp(40px,6vh,70px)}
+.menu-head h2{font-family:var(--font-serif);font-weight:400;font-size:clamp(38px,5.5vw,66px);margin-top:.2em}
+.menu-list{max-width:760px;margin:0 auto}
+.menu-item{padding:24px 0;border-bottom:1px solid var(--line)}
+.menu-item .top{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.menu-item h3{font-family:var(--font-serif);font-size:27px;font-weight:500}
+.menu-item .tag{font-family:var(--font-serif);font-style:italic;font-size:14px;color:var(--umber);white-space:nowrap}
+.menu-item p{color:var(--ink-soft);font-size:15px;margin-top:6px}
+.menu-foot{text-align:center;margin-top:44px;font-family:var(--font-serif);font-style:italic;font-size:21px;color:var(--umber)}
+
+/* GALLERY */
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head h2{font-family:var(--font-serif);font-weight:400;font-size:clamp(38px,5.5vw,66px);margin-top:.2em}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}
+.gallery figure{overflow:hidden;border-radius:2px;position:relative}
+.gallery img{width:100%;height:100%;object-fit:cover;filter:sepia(.34) contrast(1.06) saturate(.8);transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter .8s}
+.gallery figure:hover img{transform:scale(1.06);filter:sepia(.14) contrast(1.04) saturate(1)}
+.gallery .w2{grid-column:span 2}.gallery .h2{grid-row:span 2}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:16px;color:#F5EFE3;font-family:var(--font-serif);font-style:italic;font-size:17px;opacity:0;transition:.5s;background:linear-gradient(transparent,rgba(25,18,10,.72))}
+.gallery figure:hover figcaption{opacity:1}
+
+/* CONTACT */
+.contact-sec{background:var(--ink);color:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.contact-info{padding:clamp(60px,9vh,110px) clamp(32px,5vw,80px)}
+.contact-info .eyebrow{color:#E9C49B}
+.contact-info h2{font-family:var(--font-serif);font-weight:400;font-size:clamp(34px,4.6vw,56px);margin:.15em 0 .7em;color:var(--cream)}
+.contact-info h2 em{font-style:italic;color:#E9C49B}
+.cb{margin-bottom:28px}
+.cb .lbl{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--umber);margin-bottom:8px}
+.cb p{color:#D9CDBA;font-size:16px}
+.cb a{color:#E9C49B}
+.hours-row{display:flex;justify-content:space-between;max-width:330px;padding:6px 0;border-bottom:1px solid rgba(243,237,225,.12);font-size:15px;color:#D9CDBA}
+.contact-info .btn-res{border-color:#E9C49B;color:#E9C49B;display:inline-block;margin-top:14px}
+.contact-info .btn-res:hover{background:#E9C49B;color:var(--ink)}
+.map-wrap{position:relative;min-height:440px}
+.map-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:sepia(.2) contrast(1.02)}
+
+footer{background:var(--cream-2);text-align:center;padding:70px 0 36px}
+footer .logo{font-size:36px;display:inline-block;margin-bottom:14px}
+footer .tag{font-family:var(--font-serif);font-style:italic;font-size:22px;color:var(--umber);margin-bottom:26px}
+footer .fc{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;font-size:14px;color:var(--ink-soft);margin-bottom:30px}
+footer .fc a:hover{color:var(--umber)}
+footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid var(--line);padding-top:24px;max-width:1180px;margin:0 auto}
+
+@media(max-width:880px){
+  nav.main{display:none}.burger{display:flex}header .btn-res{display:none}
+  .spine::before{left:24px}
+  .node{grid-template-columns:48px 1fr;gap:0}
+  .node .dot{grid-column:1;justify-self:start;margin-left:18px}
+  .node.left .yearcol,.node.right .yearcol{grid-column:2;text-align:left;padding:0 0 6px}
+  .node.left .contentcol,.node.right .contentcol{grid-column:2;text-align:left;padding:0}
+  .node .media{margin-top:16px}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:160px}.gallery .w2{grid-column:span 2}
+  .contact-grid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}.clip{clip-path:none!important}.hero-bg{transform:none!important}
+}
+</style>
+</head>
+<body>
+<header id="hdr" class="hero-light">
+  <a href="#" class="logo">Konoba <em>Nostalgija</em></a>
+  <nav class="main">
+    <a href="#prica">Priča</a>
+    <a href="#meni">Meni</a>
+    <a href="#galerija">Galerija</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a href="tel:+38522570023" class="btn-res">Rezerviraj stol</a>
+  <button class="burger" id="burger" aria-label="Izbornik"><span></span><span></span><span></span></button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="eyebrow" style="color:#E9C49B">Šibenik · Tradicionalna dalmatinska konoba</span>
+    <h1>Priča duga <em>od 1987.</em></h1>
+    <p>Ima mjesta gdje vrijeme uspori. Gdje miris brodeta otvara vrata sjećanja, a svaki zalogaj zvuči kao bakin glas. Dobrodošli u Nostalgiju.</p>
+  </div>
+  <div class="scroll-ind">Naša priča</div>
+</section>
+
+<!-- STATS -->
+<section class="pad stats reveal">
+  <div class="grid">
+    <div class="stat"><div class="num"><span data-count="1659">0</span></div><div class="lbl">gostiju voli Nostalgiju</div></div>
+    <div class="stat"><div class="num"><span data-count="4.7" data-dec="1">0</span> ★</div><div class="lbl">prosječna ocjena</div></div>
+    <div class="stat"><div class="num"><span data-count="39">0</span></div><div class="lbl">godina za istim ognjištem</div></div>
+  </div>
+</section>
+
+<!-- MANIFEST -->
+<section class="pad manifest reveal">
+  <span class="eyebrow">Naša filozofija</span>
+  <p>Ne kuhamo brzo. Kuhamo <em>kao nekad</em> — polako, rukom, po sjećanju. Riba je iz našega mora, ulje s naših brda, a recept star koliko i ova kamena uličica.</p>
+</section>
+
+<!-- TIMELINE -->
+<section class="pad story-sec reveal" id="prica">
+  <div class="wrap">
+    <div class="story-head">
+      <span class="eyebrow">Naša priča</span>
+      <h2>Kronika jedne konobe</h2>
+    </div>
+    <div class="spine">
+      <div class="node left">
+        <div class="yearcol"><div class="year">1987.</div></div>
+        <div class="dot"></div>
+        <div class="contentcol"><div class="txt"><h3>Prvi dim nad kamenom</h3><p>Obitelj otvara malu konobu u srcu šibenskog starog grada. Šest stolova, jedno ognjište i zavjet: kuhati onako kako se kod kuće kuhalo.</p></div>
+          <div class="media clip"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Stari interijer konobe"></div></div>
+      </div>
+      <div class="node right">
+        <div class="contentcol"><div class="txt"><h3>Brodet koji se pamti</h3><p>Glas o noninu brodetu širi se gradom. Ribari, mještani i namjernici počinju dolaziti samo zbog tog jednog lonca na crveno.</p></div>
+          <div class="media clip"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Riblje jelo"></div></div>
+        <div class="dot"></div>
+        <div class="yearcol"><div class="year">1995.</div></div>
+      </div>
+      <div class="node left">
+        <div class="yearcol"><div class="year">2004.</div></div>
+        <div class="dot"></div>
+        <div class="contentcol"><div class="txt"><h3>Druga generacija</h3><p>Djeca preuzimaju kuhinju. Ništa se ne mijenja — sve se prenosi. Iste ruke, isti okus, ista strpljivost peke pod čripnjom.</p></div>
+          <div class="media clip"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Peka pod čripnjom"></div></div>
+      </div>
+      <div class="node right">
+        <div class="contentcol"><div class="txt"><h3>Terasa pod zvijezdama</h3><p>Otvara se kamena terasa. Ljetne večeri uz klapsku pjesmu i kapljicu prošeka postaju zaštitni znak Nostalgije.</p></div>
+          <div class="media clip"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Maslinik i prošek"></div></div>
+        <div class="dot"></div>
+        <div class="yearcol"><div class="year">2016.</div></div>
+      </div>
+      <div class="node left">
+        <div class="yearcol"><div class="year">Danas</div></div>
+        <div class="dot"></div>
+        <div class="contentcol"><div class="txt"><h3>Priča se nastavlja</h3><p>1659 gostiju, ocjena 4,7 i tri generacije za istim ognjištem. Sljedeća stranica ove kronike piše se za vašim stolom.</p></div>
+          <div class="media clip"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Dalmatinski stol"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="pad menu-sec reveal" id="meni">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="eyebrow">Iz naše kužine</span>
+      <h2>Tradicionalni meni</h2>
+    </div>
+    <div class="menu-list">
+      <div class="menu-item"><div class="top"><h3>Peka pod čripnjom</h3><span class="tag">ispod peke · po narudžbi</span></div><p>Hobotnica ili janjetina s krumpirom i povrćem, sporo pečeni pod žeravom. Naručuje se unaprijed jer pravo se ne žuri.</p></div>
+      <div class="menu-item"><div class="top"><h3>Brodet od šibenske ribe</h3><span class="tag">na crveno · uz palentu</span></div><p>Gusti riblji gulaš od nekoliko vrsta ribe, recept stariji od same konobe.</p></div>
+      <div class="menu-item"><div class="top"><h3>Pašticada s njokima</h3><span class="tag">krčkano satima</span></div><p>Goveđi but mariniran u domaćem prošeku, krčkan polako, uz ručno valjane njoke.</p></div>
+      <div class="menu-item"><div class="top"><h3>Riba s gradela</h3><span class="tag">dnevni ulov</span></div><p>Što more dade toga dana — pečeno na žaru, samo sol, ulje i ružmarin.</p></div>
+      <div class="menu-item"><div class="top"><h3>Škampi na buzaru</h3><span class="tag">jadranski škampi</span></div><p>U umaku od bijeloga vina, češnjaka i peršina. Jede se rukama, kako i treba.</p></div>
+      <div class="menu-item"><div class="top"><h3>Rožata</h3><span class="tag">domaći desert</span></div><p>Dalmatinski klasik s karamelom i mirisom rožulina, po nonin recept.</p></div>
+    </div>
+    <p class="menu-foot">Sezonski — ono što priroda dade, to i kuhamo.</p>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="pad wrap reveal" id="galerija">
+  <div class="gal-head">
+    <span class="eyebrow">Galerija</span>
+    <h2>Sjećanja u sepiji</h2>
+  </div>
+  <div class="gallery">
+    <figure class="w2 h2"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Peka"><figcaption>dim · žerava · čekanje</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Riba"><figcaption>more · sol · ružmarin</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=600&q=80" alt="Kamen"><figcaption>stari kamen · sjena</figcaption></figure>
+    <figure class="w2"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Stol"><figcaption>stol · obitelj · vino</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Interijer"><figcaption>drvo · svjetlo svijeće</figcaption></figure>
+    <figure><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Maslina"><figcaption>maslina · ulje · zemlja</figcaption></figure>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-sec reveal" id="kontakt">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <span class="eyebrow">Dođite k nama</span>
+      <h2>U srcu <em>starog Šibenika</em></h2>
+      <div class="cb"><div class="lbl">Adresa</div><p>Stari grad, Šibenik<br>Šibensko-kninska županija, Hrvatska</p></div>
+      <div class="cb"><div class="lbl">Rezervacije</div><p><a href="tel:+38522570023">+385 22 570 023</a><br><a href="mailto:nostalgija.sibenik@hotmail.com">nostalgija.sibenik@hotmail.com</a></p></div>
+      <div class="cb"><div class="lbl">Radno vrijeme</div>
+        <div class="hours-row"><span>Ponedjeljak – Petak</span><span>12:00 – 23:00</span></div>
+        <div class="hours-row"><span>Subota – Nedjelja</span><span>12:00 – 24:00</span></div>
+      </div>
+      <a href="tel:+38522570023" class="btn-res">Rezerviraj stol</a>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://maps.google.com/maps?q=Konoba+Nostalgija+Sibenik&output=embed" loading="lazy" title="Karta — Konoba Nostalgija Šibenik"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <a href="#" class="logo">Konoba <em>Nostalgija</em></a>
+  <div class="tag">Priča duga od 1987.</div>
+  <div class="fc">
+    <a href="tel:+38522570023">+385 22 570 023</a>
+    <a href="mailto:nostalgija.sibenik@hotmail.com">nostalgija.sibenik@hotmail.com</a>
+    <span>Stari grad, Šibenik</span>
+  </div>
+  <div class="fn">© 1987–2026 Konoba Nostalgija, Šibenik · Tradicionalna dalmatinska kuhinja · Sva prava pridržana.</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const hdr=document.getElementById('hdr');
+document.getElementById('burger').addEventListener('click',()=>document.querySelector('nav.main').style.cssText='display:flex;position:absolute;top:60px;right:24px;flex-direction:column;background:var(--cream);padding:20px 26px;gap:18px;box-shadow:0 10px 30px rgba(0,0,0,.12)');
+
+function runCount(el){
+  const target=parseFloat(el.dataset.count);const dec=parseInt(el.dataset.dec||'0');
+  const o={v:0};gsap.to(o,{v:target,duration:1.8,ease:'power2.out',onUpdate:()=>{el.textContent=dec?o.v.toFixed(1).replace('.',','):Math.round(o.v).toLocaleString('hr-HR')}});
+}
+
+if(!reduce){
+  const lenis=new Lenis({duration:1.2,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t)),smoothWheel:true});
+  gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+  lenis.on('scroll',ScrollTrigger.update);
+  document.querySelectorAll('nav.main a, footer a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();lenis.scrollTo(t,{offset:-70})}}));
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // hero slow zoom
+  gsap.to('.hero-bg',{scale:1.12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:1.5}});
+  gsap.fromTo('.hero-bg',{scale:1.0},{scale:1.06,duration:6,ease:'sine.inOut'});
+
+  // slow fades
+  gsap.utils.toArray('.reveal').forEach(el=>gsap.to(el,{opacity:1,y:0,duration:1.0,ease:'power2.out',scrollTrigger:{trigger:el,start:'top 87%'}}));
+
+  // clip-path reveals
+  gsap.utils.toArray('.clip').forEach(el=>gsap.to(el,{clipPath:'inset(0 0 0% 0)',duration:1.2,ease:'power3.inOut',scrollTrigger:{trigger:el,start:'top 82%'}}));
+
+  // count-up once
+  document.querySelectorAll('[data-count]').forEach(el=>ScrollTrigger.create({trigger:el,start:'top 90%',once:true,onEnter:()=>runCount(el)}));
+} else {
+  document.querySelectorAll('.reveal').forEach(el=>{el.style.opacity=1;el.style.transform='none'});
+  document.querySelectorAll('.clip').forEach(el=>el.style.clipPath='none');
+  document.querySelectorAll('[data-count]').forEach(el=>{const d=parseInt(el.dataset.dec||'0');el.textContent=d?parseFloat(el.dataset.count).toFixed(1).replace('.',','):parseInt(el.dataset.count).toLocaleString('hr-HR')});
+}
+window.addEventListener('scroll',()=>{const s=window.scrollY>60;hdr.classList.toggle('scrolled',s);hdr.classList.toggle('hero-light',!s)},{passive:true});
+</script>
+</body>
+</html>
