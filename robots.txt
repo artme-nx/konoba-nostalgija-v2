@@ -1,0 +1,10 @@
+# robots.txt — Konoba Nostalgija
+User-agent: *
+Allow: /
+
+# AI citation/search botovi (nikad ne blokirati):
+# OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User,
+# PerplexityBot, Perplexity-User, Googlebot, Bingbot
+# AI training botovi (dopušteni): GPTBot, ClaudeBot, Google-Extended, CCBot
+
+Sitemap: https://artme-nx.github.io/konoba-nostalgija-v2/sitemap.xml

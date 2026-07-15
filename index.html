@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Konoba Nostalgija — Šibenik · Priča duga od 1987.</title>
-<meta name="description" content="Konoba Nostalgija, Šibenik. Tradicionalna dalmatinska kuhinja i priča duga od 1987. Peka, brodet, pašticada — kuhano polako, s ljubavlju, kao nekad.">
+<title>Konoba Nostalgija — konoba Šibenik | stari grad, mali meni</title>
+<meta name="description" content="Konoba Nostalgija, Biskupa Fosca 11, stari grad Šibenik. Mediteran kakav je nekad bio, na moderan način. Mali meni, od 2 slijeda naviše po osobi. Od 2011.">
+<link rel="canonical" href="https://artme-nx.github.io/konoba-nostalgija-v2/">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="hr_HR">
+<meta property="og:title" content="Konoba Nostalgija — konoba Šibenik | stari grad, mali meni">
+<meta property="og:description" content="Mediteran kakav je nekad bio, na moderan način. Biskupa Fosca 11, stari grad Šibenik. Od 2011.">
+<meta property="og:image" content="https://artme-nx.github.io/konoba-nostalgija-v2/img/konoba-nostalgija-terasa-vecer.webp">
+<meta property="og:url" content="https://artme-nx.github.io/konoba-nostalgija-v2/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -52,7 +61,7 @@ header.scrolled .logo,header.scrolled nav.main a{color:var(--ink)}
 
 /* HERO fullbleed slow zoom */
 .hero{height:100vh;min-height:660px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
-.hero-bg{position:absolute;inset:0;background:url("https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=1900&q=80") center/cover;filter:sepia(.32) contrast(1.06) saturate(.82) brightness(.92);transform:scale(1.0);will-change:transform}
+.hero-bg{position:absolute;inset:0;background:url("img/konoba-nostalgija-terasa-vecer.webp") center/cover;filter:sepia(.32) contrast(1.06) saturate(.82) brightness(.92);transform:scale(1.0);will-change:transform}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,18,10,.42),rgba(25,18,10,.28) 45%,rgba(25,18,10,.6))}
 .hero-inner{position:relative;z-index:3;color:#F5EFE3;padding:0 28px;max-width:900px}
 .hero-inner h1{font-family:var(--font-serif);font-weight:400;font-size:clamp(48px,8vw,108px);line-height:1.02;letter-spacing:.01em;margin:.2em 0}
@@ -161,17 +170,94 @@ footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid 
   .reveal{opacity:1!important;transform:none!important}.clip{clip-path:none!important}.hero-bg{transform:none!important}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://artme-nx.github.io/konoba-nostalgija-v2/#restaurant",
+  "name": "Konoba Nostalgija",
+  "url": "https://artme-nx.github.io/konoba-nostalgija-v2/",
+  "image": ["https://artme-nx.github.io/konoba-nostalgija-v2/img/konoba-nostalgija-terasa-vecer.webp"],
+  "telephone": "+385 22 570 023",
+  "priceRange": "€€€",
+  "servesCuisine": ["Mediteranska", "Dalmatinska"],
+  "acceptsReservations": "False",
+  "smokingAllowed": false,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ul. Biskupa Fosca 11",
+    "addressLocality": "Šibenik",
+    "postalCode": "22000",
+    "addressRegion": "Šibensko-kninska županija",
+    "addressCountry": "HR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 43.7341326, "longitude": 15.8919711 },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "18:00", "closes": "22:00" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/konobanostalgija/",
+    "https://www.tripadvisor.com/Restaurant_Review-g295375-d3610822-Reviews-Konoba_Nostalgija-Sibenik_Sibenik_Knin_County_Dalmatia.html",
+    "https://nostalgija-sibenik.com/"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Jelovnik Konobe Nostalgija",
+    "hasMenuSection": [
+      { "@type": "MenuSection", "name": "Hladno",
+        "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Sir i sirevi", "offers": { "@type": "Offer", "price": "16", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Jetrica i ukiseljena kapula", "offers": { "@type": "Offer", "price": "16", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Pašteta od slanih inćuna", "offers": { "@type": "Offer", "price": "16", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Slane sardele i poma", "offers": { "@type": "Offer", "price": "16", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Dalmatinski tartar", "offers": { "@type": "Offer", "price": "18", "priceCurrency": "EUR" } }
+        ] },
+      { "@type": "MenuSection", "name": "Toplo",
+        "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Njokice i mrvice", "offers": { "@type": "Offer", "price": "19", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Panceta i pura", "offers": { "@type": "Offer", "price": "19", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Kozice i bisque", "offers": { "@type": "Offer", "price": "19", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Svinjetina i krumpir", "offers": { "@type": "Offer", "price": "21", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Brancin i blitva", "offers": { "@type": "Offer", "price": "23", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Tele i šalša", "offers": { "@type": "Offer", "price": "23", "priceCurrency": "EUR" } }
+        ] },
+      { "@type": "MenuSection", "name": "Desert",
+        "hasMenuItem": [
+          { "@type": "MenuItem", "name": "Bajadera", "offers": { "@type": "Offer", "price": "6", "priceCurrency": "EUR" } },
+          { "@type": "MenuItem", "name": "Pijane smokve", "offers": { "@type": "Offer", "price": "6", "priceCurrency": "EUR" } }
+        ] }
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Kada je Konoba Nostalgija otvorena?", "acceptedAnswer": { "@type": "Answer", "text": "Prema Google profilu konobe otvoreni smo svaki dan od 12:00 do 15:00 i od 18:00 do 22:00. Radno vrijeme se kroz sezonu može mijenjati, pa nazovite 022 570 023 ako želite biti sigurni." } },
+    { "@type": "Question", "name": "Primate li rezervacije?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Stolovi se kod nas ne rezerviraju, dolazi se i sjeda ako ima mjesta. To je jedno od pravila kuće koje stoji na ploči ispred ulaza." } },
+    { "@type": "Question", "name": "Gdje se konoba nalazi?", "acceptedAnswer": { "@type": "Answer", "text": "Na adresi Ul. Biskupa Fosca 11, 22000 Šibenik, u pješačkoj zoni starog grada. Katedrala sv. Jakova i riva su nekoliko minuta hoda." } },
+    { "@type": "Question", "name": "Gdje mogu parkirati?", "acceptedAnswer": { "@type": "Answer", "text": "Konoba je u pješačkoj zoni pa se dolazi pješice. Najbliži javni parking je Poljana, odakle se do konobe dolazi kroz stari grad." } },
+    { "@type": "Question", "name": "Koliko košta večera?", "acceptedAnswer": { "@type": "Answer", "text": "Jela na jelovniku kreću se od 16 do 23 eura, deserti su 6 eura. Google navodi orijentaciju više od 50 eura po osobi. Služimo od dva slijeda naviše po osobi." } },
+    { "@type": "Question", "name": "Imate li vegetarijanska jela i jela bez glutena?", "acceptedAnswer": { "@type": "Answer", "text": "Da. Vegetarijanska jela i jela bez glutena označena su na jelovniku, primjerice njokice i mrvice ili panceta i pura. Informacije o alergenima dobivate kod osoblja." } },
+    { "@type": "Question", "name": "Može li se kod vas pušiti?", "acceptedAnswer": { "@type": "Answer", "text": "Ne. Konoba je nepušačka, i unutra i na terasi. Toalet je namijenjen samo gostima konobe." } },
+    { "@type": "Question", "name": "Kakva je hrana kod vas?", "acceptedAnswer": { "@type": "Answer", "text": "Mediteranska i dalmatinska, složena na moderan način. Jelovnik je malen, jedanaest jela i dva deserta, i mijenja se sezonski." } }
+  ]
+}
+</script>
 </head>
 <body>
 <header id="hdr" class="hero-light">
   <a href="#" class="logo">Konoba <em>Nostalgija</em></a>
   <nav class="main">
-    <a href="#prica">Priča</a>
-    <a href="#meni">Meni</a>
+    <a href="#prica">Konoba</a>
+    <a href="#meni">Jelovnik</a>
     <a href="#galerija">Galerija</a>
     <a href="#kontakt">Kontakt</a>
   </nav>
-  <a href="tel:+38522570023" class="btn-res">Rezerviraj stol</a>
+  <a href="tel:+38522570023" class="btn-res">022 570 023</a>
   <button class="burger" id="burger" aria-label="Izbornik"><span></span><span></span><span></span></button>
 </header>
 
@@ -179,9 +265,9 @@ footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid 
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-inner">
-    <span class="eyebrow" style="color:#E9C49B">Šibenik · Tradicionalna dalmatinska konoba</span>
-    <h1>Priča duga <em>od 1987.</em></h1>
-    <p>Ima mjesta gdje vrijeme uspori. Gdje miris brodeta otvara vrata sjećanja, a svaki zalogaj zvuči kao bakin glas. Dobrodošli u Nostalgiju.</p>
+    <span class="eyebrow" style="color:#E9C49B">Šibenik · Biskupa Fosca 11 · Od 2011.</span>
+    <h1>U čast <em>težaku i ribaru</em></h1>
+    <p>Mediteran kakav je nekad bio, na moderan način. Mali jelovnik, jedanaest jela i dva deserta. Služimo od dva slijeda naviše po osobi.</p>
   </div>
   <div class="scroll-ind">Naša priča</div>
 </section>
@@ -189,55 +275,55 @@ footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid 
 <!-- STATS -->
 <section class="pad stats reveal">
   <div class="grid">
-    <div class="stat"><div class="num"><span data-count="1659">0</span></div><div class="lbl">gostiju voli Nostalgiju</div></div>
-    <div class="stat"><div class="num"><span data-count="4.7" data-dec="1">0</span> ★</div><div class="lbl">prosječna ocjena</div></div>
-    <div class="stat"><div class="num"><span data-count="39">0</span></div><div class="lbl">godina za istim ognjištem</div></div>
+    <div class="stat"><div class="num"><span data-count="1222">0</span></div><div class="lbl">recenzija na Googleu</div></div>
+    <div class="stat"><div class="num"><span data-count="4.6" data-dec="1">0</span> ★</div><div class="lbl">ocjena na Googleu</div></div>
+    <div class="stat"><div class="num"><span data-count="2">0</span></div><div class="lbl">slijeda naviše po osobi</div></div>
   </div>
 </section>
 
 <!-- MANIFEST -->
 <section class="pad manifest reveal">
   <span class="eyebrow">Naša filozofija</span>
-  <p>Ne kuhamo brzo. Kuhamo <em>kao nekad</em> — polako, rukom, po sjećanju. Riba je iz našega mora, ulje s naših brda, a recept star koliko i ova kamena uličica.</p>
+  <p>Mediteran je ondje gdje su sunce, more i masline. <em>Ali Mediteran može biti i na vašem stolu.</em> Nostalgija nudi okus Mediterana kakav je nekad bio, samo na moderan način.</p>
 </section>
 
 <!-- TIMELINE -->
 <section class="pad story-sec reveal" id="prica">
   <div class="wrap">
     <div class="story-head">
-      <span class="eyebrow">Naša priča</span>
-      <h2>Kronika jedne konobe</h2>
+      <span class="eyebrow">Konoba</span>
+      <h2>Kako se kod nas jede</h2>
     </div>
     <div class="spine">
       <div class="node left">
-        <div class="yearcol"><div class="year">1987.</div></div>
+        <div class="yearcol"><div class="year">Kuća</div></div>
         <div class="dot"></div>
-        <div class="contentcol"><div class="txt"><h3>Prvi dim nad kamenom</h3><p>Obitelj otvara malu konobu u srcu šibenskog starog grada. Šest stolova, jedno ognjište i zavjet: kuhati onako kako se kod kuće kuhalo.</p></div>
-          <div class="media clip"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" alt="Stari interijer konobe"></div></div>
+        <div class="contentcol"><div class="txt"><h3>Biskupa Fosca 11</h3><p>Konoba radi od 2011. u pješačkoj zoni starog Šibenika. Natpis nad ulazom stoji kao posveta: u čast težaku i ribaru.</p></div>
+          <div class="media clip"><img src="img/konoba-nostalgija-terasa-dan.webp" width="800" height="1200" alt="Terasa Konobe Nostalgija danju, drvene stolice pod tendom i jasmin u cvatu"></div></div>
       </div>
       <div class="node right">
-        <div class="contentcol"><div class="txt"><h3>Brodet koji se pamti</h3><p>Glas o noninu brodetu širi se gradom. Ribari, mještani i namjernici počinju dolaziti samo zbog tog jednog lonca na crveno.</p></div>
-          <div class="media clip"><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Riblje jelo"></div></div>
+        <div class="contentcol"><div class="txt"><h3>Hladno</h3><p>Počinje se lagano. Sir i sirevi, jetrica i ukiseljena kapula, slane sardele i poma, pašteta od slanih inćuna ili dalmatinski tartar.</p></div>
+          <div class="media clip"><img src="img/konoba-nostalgija-sardele.webp" width="1200" height="900" alt="Marinirane sardele s limunom i crvenim lukom na tanjuru"></div></div>
         <div class="dot"></div>
-        <div class="yearcol"><div class="year">1995.</div></div>
+        <div class="yearcol"><div class="year">Prvo</div></div>
       </div>
       <div class="node left">
-        <div class="yearcol"><div class="year">2004.</div></div>
+        <div class="yearcol"><div class="year">Drugo</div></div>
         <div class="dot"></div>
-        <div class="contentcol"><div class="txt"><h3>Druga generacija</h3><p>Djeca preuzimaju kuhinju. Ništa se ne mijenja — sve se prenosi. Iste ruke, isti okus, ista strpljivost peke pod čripnjom.</p></div>
-          <div class="media clip"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=80" alt="Peka pod čripnjom"></div></div>
+        <div class="contentcol"><div class="txt"><h3>Toplo</h3><p>Njokice i mrvice, panceta i pura, kozice i bisque, svinjetina i krumpir, brancin i blitva, tele i šalša. Šest jela, ni jedno više.</p></div>
+          <div class="media clip"><img src="img/konoba-nostalgija-meso-batat.webp" width="1200" height="1027" alt="Medaljon svinjetine s pancetom na pireu od batata, s gljivama i kaduljom"></div></div>
       </div>
       <div class="node right">
-        <div class="contentcol"><div class="txt"><h3>Terasa pod zvijezdama</h3><p>Otvara se kamena terasa. Ljetne večeri uz klapsku pjesmu i kapljicu prošeka postaju zaštitni znak Nostalgije.</p></div>
-          <div class="media clip"><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Maslinik i prošek"></div></div>
+        <div class="contentcol"><div class="txt"><h3>Desert</h3><p>Bajadera i pijane smokve. Dva deserta, oba po 6 €, oba kuće.</p></div>
+          <div class="media clip"><img src="img/konoba-nostalgija-desert-smokve.webp" width="900" height="1200" alt="Desert sa smokvama i karameliziranim sirom na tanjuru"></div></div>
         <div class="dot"></div>
-        <div class="yearcol"><div class="year">2016.</div></div>
+        <div class="yearcol"><div class="year">Treće</div></div>
       </div>
       <div class="node left">
-        <div class="yearcol"><div class="year">Danas</div></div>
+        <div class="yearcol"><div class="year">Pravilo</div></div>
         <div class="dot"></div>
-        <div class="contentcol"><div class="txt"><h3>Priča se nastavlja</h3><p>1659 gostiju, ocjena 4,7 i tri generacije za istim ognjištem. Sljedeća stranica ove kronike piše se za vašim stolom.</p></div>
-          <div class="media clip"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Dalmatinski stol"></div></div>
+        <div class="contentcol"><div class="txt"><h3>Od dva slijeda naviše</h3><p>Služimo od dva slijeda naviše po osobi. Stolovi se ne rezerviraju, ne puši se, a toalet je samo za goste.</p></div>
+          <div class="media clip"><img src="img/konoba-nostalgija-njokice.webp" width="1200" height="900" alt="Njokice u umaku od rajčice s komadima teletine"></div></div>
       </div>
     </div>
   </div>
@@ -247,18 +333,27 @@ footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid 
 <section class="pad menu-sec reveal" id="meni">
   <div class="wrap">
     <div class="menu-head">
-      <span class="eyebrow">Iz naše kužine</span>
-      <h2>Tradicionalni meni</h2>
+      <span class="eyebrow">Jelovnik</span>
+      <h2>Služimo od dva slijeda naviše</h2>
     </div>
     <div class="menu-list">
-      <div class="menu-item"><div class="top"><h3>Peka pod čripnjom</h3><span class="tag">ispod peke · po narudžbi</span></div><p>Hobotnica ili janjetina s krumpirom i povrćem, sporo pečeni pod žeravom. Naručuje se unaprijed jer pravo se ne žuri.</p></div>
-      <div class="menu-item"><div class="top"><h3>Brodet od šibenske ribe</h3><span class="tag">na crveno · uz palentu</span></div><p>Gusti riblji gulaš od nekoliko vrsta ribe, recept stariji od same konobe.</p></div>
-      <div class="menu-item"><div class="top"><h3>Pašticada s njokima</h3><span class="tag">krčkano satima</span></div><p>Goveđi but mariniran u domaćem prošeku, krčkan polako, uz ručno valjane njoke.</p></div>
-      <div class="menu-item"><div class="top"><h3>Riba s gradela</h3><span class="tag">dnevni ulov</span></div><p>Što more dade toga dana — pečeno na žaru, samo sol, ulje i ružmarin.</p></div>
-      <div class="menu-item"><div class="top"><h3>Škampi na buzaru</h3><span class="tag">jadranski škampi</span></div><p>U umaku od bijeloga vina, češnjaka i peršina. Jede se rukama, kako i treba.</p></div>
-      <div class="menu-item"><div class="top"><h3>Rožata</h3><span class="tag">domaći desert</span></div><p>Dalmatinski klasik s karamelom i mirisom rožulina, po nonin recept.</p></div>
+      <div class="menu-item"><div class="top"><h3>Sir i sirevi</h3><span class="tag">vegetarijansko · 16 €</span></div><p>cheese and cheeses</p></div>
+      <div class="menu-item"><div class="top"><h3>Jetrica i ukiseljena kapula</h3><span class="tag">bez glutena · 16 €</span></div><p>liver and pickled onions</p></div>
+      <div class="menu-item"><div class="top"><h3>Pašteta od slanih inćuna</h3><span class="tag">hladno · 16 €</span></div><p>salted anchovy pate</p></div>
+      <div class="menu-item"><div class="top"><h3>Slane sardele i poma</h3><span class="tag">bez glutena · 16 €</span></div><p>salty sardines and tomato</p></div>
+      <div class="menu-item"><div class="top"><h3>Dalmatinski tartar</h3><span class="tag">hladno · 18 €</span></div><p>dalmatian tartare</p></div>
+      <div class="menu-item"><div class="top"><h3>Kruh</h3><span class="tag">3 €</span></div><p>bread</p></div>
+      <div class="menu-item"><div class="top"><h3>Njokice i mrvice</h3><span class="tag">vegetarijansko · 19 €</span></div><p>gnocchi and crumbs</p></div>
+      <div class="menu-item"><div class="top"><h3>Panceta i pura</h3><span class="tag">bez glutena · 19 €</span></div><p>bacon and polenta</p></div>
+      <div class="menu-item"><div class="top"><h3>Kozice i bisque</h3><span class="tag">toplo · 19 €</span></div><p>prawns and bisque</p></div>
+      <div class="menu-item"><div class="top"><h3>Svinjetina i krumpir</h3><span class="tag">bez glutena · 21 €</span></div><p>pork and potatoes</p></div>
+      <div class="menu-item"><div class="top"><h3>Brancin i blitva</h3><span class="tag">bez glutena · 23 €</span></div><p>sea bass and chard</p></div>
+      <div class="menu-item"><div class="top"><h3>Tele i šalša</h3><span class="tag">bez glutena · 23 €</span></div><p>veal and tomato sauce</p></div>
+      <div class="menu-item"><div class="top"><h3>Bajadera</h3><span class="tag">desert · 6 €</span></div><p>hrvatski desert</p></div>
+      <div class="menu-item"><div class="top"><h3>Pijane smokve</h3><span class="tag">desert kuće · 6 €</span></div><p>drunken figs</p></div>
     </div>
-    <p class="menu-foot">Sezonski — ono što priroda dade, to i kuhamo.</p>
+    <!-- TODO[klijent]: potvrditi aktualne cijene i sastav jelovnika prije objave (izvor: fotografirani jelovnik s Google profila + cjenik.info). -->
+    <p class="menu-foot">Jelovnik se mijenja sezonski. Informacije o alergenima dobivate kod osoblja.</p>
   </div>
 </section>
 
@@ -269,12 +364,12 @@ footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid 
     <h2>Sjećanja u sepiji</h2>
   </div>
   <div class="gallery">
-    <figure class="w2 h2"><img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=900&q=80" alt="Peka"><figcaption>dim · žerava · čekanje</figcaption></figure>
-    <figure><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Riba"><figcaption>more · sol · ružmarin</figcaption></figure>
-    <figure><img src="https://images.unsplash.com/photo-1533777324565-a040eb52facd?auto=format&fit=crop&w=600&q=80" alt="Kamen"><figcaption>stari kamen · sjena</figcaption></figure>
-    <figure class="w2"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Stol"><figcaption>stol · obitelj · vino</figcaption></figure>
-    <figure><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Interijer"><figcaption>drvo · svjetlo svijeće</figcaption></figure>
-    <figure><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=600&q=80" alt="Maslina"><figcaption>maslina · ulje · zemlja</figcaption></figure>
+    <figure class="w2 h2"><img src="img/konoba-nostalgija-terasa-vecer.webp" width="800" height="1200" alt="Ulaz i terasa Konobe Nostalgija u starom gradu Šibeniku navečer"><figcaption>Biskupa Fosca 11 · sumrak</figcaption></figure>
+    <figure><img src="img/konoba-nostalgija-crni-rizot.webp" width="1200" height="1200" alt="Crni rižot s klicama cikle na bijelom tanjuru"><figcaption>crni rižot</figcaption></figure>
+    <figure><img src="img/konoba-nostalgija-riba-povrce.webp" width="1200" height="903" alt="Bijela riba s motarom i tikvicama"><figcaption>brancin i blitva</figcaption></figure>
+    <figure class="w2"><img src="img/konoba-nostalgija-njokice.webp" width="1200" height="900" alt="Njokice u umaku od rajčice s teletinom"><figcaption>njokice i mrvice</figcaption></figure>
+    <figure><img src="img/konoba-nostalgija-glavno-jelo.webp" width="1200" height="900" alt="Pečeno meso s pireom od bundeve i tikvicama"><figcaption>s naše kuhinje</figcaption></figure>
+    <figure><img src="img/konoba-nostalgija-cokoladni-tart.webp" width="1200" height="900" alt="Čokoladni desert s metvicom na tamnom tanjuru"><figcaption>bajadera</figcaption></figure>
   </div>
 </section>
 
@@ -284,29 +379,51 @@ footer .fn{font-size:12px;color:var(--ink-soft);opacity:.7;border-top:1px solid 
     <div class="contact-info">
       <span class="eyebrow">Dođite k nama</span>
       <h2>U srcu <em>starog Šibenika</em></h2>
-      <div class="cb"><div class="lbl">Adresa</div><p>Stari grad, Šibenik<br>Šibensko-kninska županija, Hrvatska</p></div>
-      <div class="cb"><div class="lbl">Rezervacije</div><p><a href="tel:+38522570023">+385 22 570 023</a><br><a href="mailto:nostalgija.sibenik@hotmail.com">nostalgija.sibenik@hotmail.com</a></p></div>
+      <div class="cb"><div class="lbl">Adresa</div><p>Ul. Biskupa Fosca 11<br>22000 Šibenik, Hrvatska</p></div>
+      <div class="cb"><div class="lbl">Telefon</div><p><a href="tel:+38522570023">+385 22 570 023</a><br>Ne primamo rezervacije.</p></div>
       <div class="cb"><div class="lbl">Radno vrijeme</div>
-        <div class="hours-row"><span>Ponedjeljak – Petak</span><span>12:00 – 23:00</span></div>
-        <div class="hours-row"><span>Subota – Nedjelja</span><span>12:00 – 24:00</span></div>
+        <div class="hours-row"><span>Svaki dan</span><span>12:00 – 15:00</span></div>
+        <div class="hours-row"><span>Svaki dan</span><span>18:00 – 22:00</span></div>
+        <!-- TODO[klijent]: potvrditi radno vrijeme i radi li se nedjeljom. Google profil (ažuriran 11 tjedana prije 15.07.2026.) navodi 12–15 i 18–22 svaki dan; ploča ispred lokala na fotografiji navodi 18–22 i "NEDJELJA ZATVORENO". -->
       </div>
-      <a href="tel:+38522570023" class="btn-res">Rezerviraj stol</a>
+      <div class="cb"><div class="lbl">Kako do nas</div><p>Stari grad Šibenika, pješačka zona. Katedrala sv. Jakova i riva su nekoliko minuta hoda. Najbliži javni parking je Poljana.</p></div>
+      <a href="tel:+38522570023" class="btn-res">Nazovite 022 570 023</a>
     </div>
     <div class="map-wrap">
-      <iframe src="https://maps.google.com/maps?q=Konoba+Nostalgija+Sibenik&output=embed" loading="lazy" title="Karta — Konoba Nostalgija Šibenik"></iframe>
+      <iframe src="https://maps.google.com/maps?q=Konoba+Nostalgija,+Ul.+Biskupa+Fosca+11,+22000+%C5%A0ibenik&output=embed" loading="lazy" title="Karta: Konoba Nostalgija, Biskupa Fosca 11, Šibenik"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="pad menu-sec reveal" id="faq">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="eyebrow">Česta pitanja</span>
+      <h2>Prije nego dođete</h2>
+    </div>
+    <div class="menu-list">
+      <div class="menu-item"><div class="top"><h3>Kada je Konoba Nostalgija otvorena?</h3></div><p>Prema Google profilu konobe otvoreni smo svaki dan od 12:00 do 15:00 i od 18:00 do 22:00. Radno vrijeme se kroz sezonu može mijenjati, pa nazovite 022 570 023 ako želite biti sigurni.</p></div>
+      <div class="menu-item"><div class="top"><h3>Primate li rezervacije?</h3></div><p>Ne. Stolovi se kod nas ne rezerviraju, dolazi se i sjeda ako ima mjesta. To je jedno od pravila kuće koje stoji na ploči ispred ulaza.</p></div>
+      <div class="menu-item"><div class="top"><h3>Gdje se konoba nalazi?</h3></div><p>Na adresi Ul. Biskupa Fosca 11, 22000 Šibenik, u pješačkoj zoni starog grada. Katedrala sv. Jakova i riva su nekoliko minuta hoda.</p></div>
+      <div class="menu-item"><div class="top"><h3>Gdje mogu parkirati?</h3></div><p>Konoba je u pješačkoj zoni pa se dolazi pješice. Najbliži javni parking je Poljana, odakle se do konobe dolazi kroz stari grad.</p></div>
+      <div class="menu-item"><div class="top"><h3>Koliko košta večera?</h3></div><p>Jela na jelovniku kreću se od 16 do 23 €, deserti su 6 €. Google navodi orijentaciju više od 50 € po osobi. Služimo od dva slijeda naviše po osobi.</p></div>
+      <div class="menu-item"><div class="top"><h3>Imate li vegetarijanska jela i jela bez glutena?</h3></div><p>Da. Vegetarijanska jela i jela bez glutena označena su na jelovniku, primjerice njokice i mrvice ili panceta i pura. Informacije o alergenima dobivate kod osoblja.</p></div>
+      <div class="menu-item"><div class="top"><h3>Može li se kod vas pušiti?</h3></div><p>Ne. Konoba je nepušačka, i unutra i na terasi. Toalet je namijenjen samo gostima konobe.</p></div>
+      <div class="menu-item"><div class="top"><h3>Kakva je hrana kod vas?</h3></div><p>Mediteranska i dalmatinska, složena na moderan način. Jelovnik je malen, jedanaest jela i dva deserta, i mijenja se sezonski.</p></div>
     </div>
   </div>
 </section>
 
 <footer>
   <a href="#" class="logo">Konoba <em>Nostalgija</em></a>
-  <div class="tag">Priča duga od 1987.</div>
+  <div class="tag">U čast težaku i ribaru. Od 2011.</div>
   <div class="fc">
     <a href="tel:+38522570023">+385 22 570 023</a>
-    <a href="mailto:nostalgija.sibenik@hotmail.com">nostalgija.sibenik@hotmail.com</a>
-    <span>Stari grad, Šibenik</span>
+    <span>Ul. Biskupa Fosca 11, 22000 Šibenik</span>
+    <span>Svaki dan 12:00–15:00 i 18:00–22:00</span>
   </div>
-  <div class="fn">© 1987–2026 Konoba Nostalgija, Šibenik · Tradicionalna dalmatinska kuhinja · Sva prava pridržana.</div>
+  <div class="fn">Obrt za ugostiteljstvo „NOSTALGIJA“ · Ul. Biskupa Fosca 11, 22000 Šibenik · OIB: 23320601712 · © 2026.</div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
